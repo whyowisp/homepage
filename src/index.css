@@ -1,13 +1,217 @@
+/* Sivun yleiset määritykset */
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+  overflow: auto;
+}
+.bg {
+  width: 100%;
+
+  background-image: linear-gradient(rgba(248, 241, 227, 0.9), rgba(0, 0, 0, 0.6)), url(./images/seamap.png);
+}
+img {
+  border: solid black 1px;
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(8, 6, 19,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(8, 6, 19, .5);
+  box-shadow: 1px 2px 4px rgba(8, 6, 19, .5);
+  padding: 10px;
+  background: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Heading-määritykset */
+.page {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
+.hero-image {
+  background-image: linear-gradient(rgba(8, 6, 19, 0.5), rgba(8, 6, 19, 0.5)),    url(./images/self.jpg);
+  height: 100%;    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;  
+  color: rgb(247, 248, 242);
+  padding-top: 50px;
+  padding-bottom: 15px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 170%;
+}
+
+/* Menumääritykset */
+.fa-plus {    
+  font-size: 50%;
+}
+ul {
+  list-style-type: none; 
+  font-family: 'Great Vibes', cursive;
+  font-size: 150%;
+  text-align: justify;
+  margin-left: 0;
+}
+li a {    
+  display: block;
+  color: rgb(7, 2, 35);
+  padding: 5px 16px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #555;
+  color: rgb(165, 73, 40);
+}
+li a:hover:not(.active) {
+  color: rgb(247, 248, 242);
+}
+.dropdown-content {
+  display: none;
+  z-index: 1;
+  text-align: left;
+  margin-left: 40px;
+}   
+.dropdown:hover .dropdown-content {
+  display: block;    
+}
+
+/* Artikkelisisällöt */
+article {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;    
+  margin: 0;
+  color: rgb(8, 6, 19);
+}
+.main_article {
+  background-color: rgba(204, 204, 204, 0.692);
+  padding: 2em;
+  margin: auto;
+  border: solid black 1px;
+}
+iframe {
+  display: block;
+  margin: auto;
+  border: solid black 1px;
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background: white;
+}
+.imagegallery {   
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.imagegallery img {
+  max-width: 40%;
+}
+.fa-feather-alt {
+  display: inline-block;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  padding: 0.5em;
+  color: rgb(165, 73, 40);    
+}
+h1 {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+h2 {
+  text-align: center;
+}
+.lainaukset {
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* Oikean palstan määritykset */
+aside {
+  text-align: center;
+  float:left;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.link { 
+  font-size: 35px;
+  margin: 0.3em 0.7em;    
+  display: inline-block;
+}
+div .link a {
+  color: rgb(7, 2, 35);
+}
+div .link a:hover:not(.active) {
+  color: rgb(247, 248, 242);
+}
+
+/* Footer-määritys */
+footer {
+  clear: both;
+  margin-bottom: 15px;
+  padding: 6px;
+  background-color: rgb(8, 6, 19);
+  color: rgb(247, 248, 242);
+  border: solid black 1px;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
+/* Laitekohtaiset responsiivisuusmääritykset */
+/* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+.col-t-1 {width: 8.33%}
+.col-t-2 {width: 16.66%;}
+.col-t-3 {width: 25%;}
+.col-t-4 {width: 33.33%;}
+.col-t-5 {width: 41.66%;}
+.col-t-6 {width: 50%;}
+.col-t-7 {width: 58.33%;}
+.col-t-8 {width: 66.66%;}
+.col-t-9 {width: 75%;}
+.col-t-10 {width: 83.33%;}
+.col-t-11 {width: 91.66%;}
+.col-t-12 {width: 100%;}  
+}
+@media only screen and (min-width: 800px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+/* page colours red220, 92, 46/yellow204, 193, 77/white247, 248, 242/green153, 183, 171/
+black8, 6, 19 alt: red165, 73, 40/black7, 2, 35/ */
+
+
+
