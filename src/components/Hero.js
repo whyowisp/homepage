@@ -2,19 +2,18 @@ import { Typography, Paper, Box, Grid } from '@mui/material'
 
 const Hero = (props) => {
   const { heroData } = props
-  console.log(heroData)
+
   return (
     <Paper
       sx={{
         position: 'relative',
-        backgroundColor: 'grey.800',
-        color: '#fff',
+        backgroundColor: '#c3bba8',
+        color: 'black',
         mb: 4,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundImage: `url(${heroData.image})`,
-        border: 4,
       }}
     >
       {
@@ -31,7 +30,7 @@ const Hero = (props) => {
           bottom: 0,
           right: 0,
           left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)',
+          backgroundColor: 'rgba(195,187,168,.6)',
         }}
       />
       <Grid container>
