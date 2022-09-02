@@ -30,6 +30,7 @@ const ContentElement = (props) => {
       md={8}
       sx={{
         fontSize: 18,
+        typography: 'body1',
       }}
     >
       {content.map((post) => (
@@ -43,7 +44,7 @@ const ContentElement = (props) => {
             </Typography>
             {post.git ? (
               <div>
-                Git:<Link>{post.git}</Link>
+                Git: <Link>{post.git}</Link>
               </div>
             ) : null}
             {post.media ? post.media : null}
@@ -61,7 +62,8 @@ const ContentElement = (props) => {
             {post.imageList ? (
               <MasonryImageList itemData={post.imageList} />
             ) : null}
-            <Typography sx={{ m: 1 }}>{post.content}</Typography>
+            <Box sx={{ m: 1 }}>{post.content}</Box>
+
             <Divider />
           </Paper>
         </div>

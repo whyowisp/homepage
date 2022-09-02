@@ -5,7 +5,7 @@ const Copyright = () => {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Mikko Sipola
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
