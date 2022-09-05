@@ -4,7 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem'
 
 const MasonryImageList = ({ itemData }) => {
   return (
-    <Box sx={{ width: 600, height: 550, overflowY: 'hidden' }}>
+    <Box sx={{ display: 'flex', overflowX: 'hidden' }}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -37,7 +37,7 @@ const ContentElement = (props) => {
         <div key={post.title}>
           <Paper
             elevation={0}
-            sx={{ backgroundColor: 'white', padding: 1, margin: 3 }}
+            sx={{ backgroundColor: 'white', padding: 1, margin: 0 }}
           >
             <Typography variant="h4" gutterBottom sx={{ mt: 3 }}>
               {post.title}
@@ -63,7 +63,6 @@ const ContentElement = (props) => {
               <MasonryImageList itemData={post.imageList} />
             ) : null}
             <Box sx={{ m: 1 }}>{post.content}</Box>
-
             <Divider />
           </Paper>
         </div>

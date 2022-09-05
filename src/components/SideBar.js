@@ -21,7 +21,7 @@ const Social = ({ social }) => {
         <Link
           display="block"
           variant="body1"
-          href="#"
+          href={network.link}
           key={network.name}
           sx={{ mb: 0.5 }}
         >
@@ -83,6 +83,7 @@ const About = ({ about }) => {
   )
 }
 
+//Parent
 const SideBar = (props) => {
   const { sideBar } = props
   return (

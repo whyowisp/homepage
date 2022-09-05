@@ -9,7 +9,7 @@ const Hero = (props) => {
         position: 'relative',
         backgroundColor: '#c3bba8',
         color: 'black',
-        mb: 4,
+        mb: 0,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

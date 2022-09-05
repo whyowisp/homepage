@@ -1,11 +1,11 @@
-import { Typography, Toolbar, Link, Divider } from '@mui/material'
+import { Typography, Toolbar, Box, Button, ButtonGroup } from '@mui/material'
 
-const Header = ({ sections, title }) => {
+const Header = ({ sections, title, handleClick }) => {
   return (
     <>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Typography
-          component="h2"
+          component="h3"
           variant="h5"
           align="center"
           noWrap
@@ -14,26 +14,29 @@ const Header = ({ sections, title }) => {
           {title}
         </Typography>
       </Toolbar>
-      <Toolbar
-        component="nav"
-        variant="dense"
+      <Box
         sx={{
-          justifyContent: 'space-between',
-          overflowX: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          '& > *': {
+            m: 1,
+          },
         }}
       >
-        {sections.map((section) => (
-          <Link
-            noWrap
-            key={section.title}
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
-          >
-            {section.title}
-            <Divider />
-          </Link>
-        ))}
-      </Toolbar>
+        <ButtonGroup variant="text" aria-label="text button group">
+          {sections.map((section) => (
+            <Button
+              key={section.title}
+              id={section.title}
+              onClick={(event) => handleClick(event)}
+              sx={{ pl: 4, pr: 4 }}
+            >
+              {section.title}
+            </Button>
+          ))}
+        </ButtonGroup>
+      </Box>
     </>
   )
 }
