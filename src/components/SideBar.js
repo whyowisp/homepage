@@ -61,11 +61,13 @@ const BusinessCard = ({ cardData }) => {
           </Box>
         </Box>
         <Divider sx={{ bgcolor: 'grey.600' }} />
-        <Box sx={{ fontSize: 16, m: 1 }}>
+        <Typography sx={{ fontSize: 13, p: 1 }}>
           <Link key={cardData.email} href={cardData.email}>
             {cardData.email}
           </Link>
-        </Box>
+          <br></br>
+          <Link href={cardData.cv}>Curriculum Vitae</Link>
+        </Typography>
       </Card>
     </>
   )

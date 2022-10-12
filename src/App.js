@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { createTheme, ThemeProvider, Grid } from '@mui/material'
+import { createTheme, ThemeProvider, Grid, CssBaseline } from '@mui/material'
 import { Container } from '@mui/system'
 
 import Header from './components/Header'
@@ -17,7 +17,32 @@ import {
   sideBar,
 } from './data/pageData'
 
-//Might add theme someday
+//Nice theme to work with
+const personalTheme = createTheme({
+  palette: {
+    type: 'light',
+    primary: {
+      main: '#9EADA5',
+    },
+    secondary: {
+      main: '#4E6156',
+    },
+    text: {
+      primary: '#614745',
+    },
+    background: {
+      default: '#614745',
+      paper: '#AD9F9E',
+    },
+  },
+  typography: {
+    fontFamily: 'Do Hyeon',
+  },
+  shape: {
+    borderRadius: 16,
+  },
+})
+//Mui basic theme, no modifications
 const theme = createTheme()
 
 const App = () => {
@@ -26,9 +51,11 @@ const App = () => {
   const handleClick = (e) => {
     e.preventDefault()
 
-    if (e.target.id === 'Home') setContent(contentHome)
-    if (e.target.id === 'Portfolio') setContent(portfolio)
-    if (e.target.id === 'Hobbies') setContent(hobbies)
+    const id = e.target.id
+
+    if (id === 'Home') setContent(contentHome)
+    if (id === 'Portfolio') setContent(portfolio)
+    if (id === 'Hobbies') setContent(hobbies)
   }
 
   return (

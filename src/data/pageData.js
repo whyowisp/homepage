@@ -13,6 +13,7 @@ import wheelbuilder from '../images/wheelbuilder.jpg'
 import pinnacle from '../images/pinnacle_valmis.jpg'
 import takaiskari from '../images/takaiskari_34bar.jpg'
 import paintjob from '../images/monark_paintjob.jpg'
+import kinesis from '../images/kinesis.jpg'
 
 const BandCampIcon = (props) => {
   // Svg path: Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
@@ -135,6 +136,7 @@ export const sideBar = {
     name: 'Mikko Sipola',
     title: 'Software engineer/fullstack developer',
     email: 'mikko.sipola@tutanota.com',
+    cv: '/docs/cv.pdf',
   },
   about: about,
 }
@@ -170,12 +172,12 @@ const post2 = {
     <>
       <p>
         This project was my first fullstack project with now (2022) little bit
-        outdated technologies, though they say php will never die. Subject of
+        outdated technologies, though they say Php will never die. Subject of
         this exercise was a Diary App for alpha males. It is a true fullstack
-        project from MySQL database to backend implementation trought
-        server-side rendering to web page design. On the other hand the Drawing
-        Tab is implemented with vanilla JS, so there we have some client side
-        rendering also.
+        project from MySQL database to backend implementation trough server-side
+        rendering to web page design. On the other hand the Drawing Tab is
+        implemented with vanilla JS, so there we have some client side rendering
+        also.
       </p>
 
       <p>
@@ -259,16 +261,16 @@ const hobby1 = {
   content: (
     <>
       <p>
-        Especially when i was younger my life revolved around music. I used to
-        listen and play (and sing too) music almost all the time, soon i found
+        Especially when I was younger my life revolved around music. I used to
+        listen and play (and sing too) music almost all the time, soon I found
         myself studying sound engineering in vocational school at Orimattila
-        where i graduated at 2005. Still, music is my passion, but nowadays
+        where I graduated at 2005. Still, music is my passion, but nowadays
         mostly by listening to it.
       </p>
 
       <p>
-        The <em>Illusioni Majoris</em> was/is my main project. Since i adore
-        instrumental/prog rock, it's just natural that i try and produce
+        The <em>Illusioni Majoris</em> was/is my main project. Since I adore
+        instrumental/prog rock, it's just natural that I try and produce
         something like it myself too.
       </p>
     </>
@@ -281,39 +283,35 @@ const hobby2 = {
   content: (
     <>
       <p>
-        I have always been on two wheels, since i asked my parents to take off
+        I have always been on two wheels, since I asked my parents to take off
         the auxiliary wheels as a four year old. My family never could afford
-        new bicycle but nevertheless i kept going out and adventures. Later my
+        new bicycle but nevertheless I kept going out and adventures. Later my
         body developed allergies and asthma, and i never could'nt get in good
-        shape so please don't ask me how much i have cycled this year. My miles
+        shape so please don't ask me how much I have cycled this year. My miles
         are not mentionworthy.
       </p>
 
       <p>
-        Instead i enhanced my skills as a mechanic and made it my craft for few
+        Instead I enhanced my skills as a mechanic and made it my craft for few
         years. Still, work isn't necessarily easy with my health (nor anyones
         health in Finland where bikes collect quite a lot of dirt and basically
         bike mechanics have to breathe that stuff in when they are cleaning
-        bikes) and eventually i had to quit. <br></br>
+        bikes) and eventually I had to quit. <br></br>
         That red coloured steel frame Basso in the images have been my main
         apparatus since 2018. I take her out few times in a year. Most of the
-        time i commute either with my electric bike or with another steel framed
+        time I commute either with my electric bike or with another steel framed
         old mountainbike. <br></br>I have been dreaming to get back to the
-        singletracks, like serious mountain biking, which i used to do when i
-        was younger. I enjoy marathon/xc types of rides and bikes, but i also
-        love to have pace, maybe i dould try some enduro/all mountain type of
+        singletracks, like serious mountain biking, which I used to do when I
+        was younger. I enjoy marathon/xc types of rides and bikes, but I also
+        love to have pace, maybe I dould try some enduro/all mountain type of
         riding too.
-        <br></br>Oh, i almost forgot to mention i did bikepacking from Vantaa,
+        <br></br>Oh, I almost forgot to mention I did bikepacking from Vantaa,
         to Joensuu at my twenties. Loved that stuff too; you know, for me it's
         always cycling and bikes, bikes and cycling.
       </p>
     </>
   ),
   imageList: [
-    {
-      img: pinnacle,
-      title: 'pinnacle',
-    },
     {
       img: basso2,
       title: 'basso2',
@@ -333,7 +331,15 @@ const hobby2 = {
     },
     {
       img: paintjob,
-      title: 'paintojob',
+      title: 'paintjob',
+    },
+    {
+      img: kinesis,
+      title: 'kinesis',
+    },
+    {
+      img: pinnacle,
+      title: 'pinnacle',
     },
   ],
 }
