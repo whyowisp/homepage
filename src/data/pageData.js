@@ -14,6 +14,7 @@ import pinnacle from '../images/pinnacle_valmis.jpg'
 import takaiskari from '../images/takaiskari_34bar.jpg'
 import paintjob from '../images/monark_paintjob.jpg'
 import kinesis from '../images/kinesis.jpg'
+import rpmt from '../images/rpmt.png'
 
 const BandCampIcon = (props) => {
   // Svg path: Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
@@ -26,7 +27,8 @@ const BandCampIcon = (props) => {
   )
 }
 
-const GitLabIcon = (props) => {
+//Removed
+/*const GitLabIcon = (props) => {
   // Svg path: Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
   return (
     <SvgIcon {...props}>
@@ -45,7 +47,7 @@ const GitLabIcon = (props) => {
       </svg>
     </SvgIcon>
   )
-}
+}*/
 
 export const heroData = {
   title: 'The Man, the Myth and the Legend',
@@ -65,36 +67,40 @@ export const contentHome = [
     title: 'Who, me?',
     content: (
       <>
-        <em>updated 31/08/2022</em>
+        <em>updated 16/02/2024</em>
         <p>
-          My name is Mikko Sipola, student of Jamk University of Applied
-          Sciences since 2019. I will be graduating in the end of 2023 from
-          Bachelors Degree Programme in Information and Communications
-          technology as an ICT Engineer.
+          Hello, I am a freshly graduated software engineer currently located in
+          Central-Finland, most experience in full stack development but with
+          interest in basically anything that involves process of thinking,
+          designing and building best solution for the problem in hand. In
+          software development I simply enjoy for the a-ha moments and seeing
+          bits and pieces coming together one by one towards a fully working
+          feature or a product.
         </p>
         <p>
-          At the moment I'm specializing with Fullstack development in
-          Javascript ecosystem with technologies including React/React Native,
-          Redux and NodeJS/Express accompanied with Jest, Cypress, MongoDB,
-          GraphQL, PostgreSQL, TypeScript and Docker.
-        </p>
-        <p>
-          Right now I'm looking for internship opportunities in
-          Jyväskylä-region, starting from february 2023, hopefully with
-          technologies mentioned. I see programming with .NET environment as an
-          fallback option, possibly in app development.
-        </p>
-        <p>
-          In future I see myself as an some kind of expert position as a{' '}
-          <em>doer</em>, programmer, developer, obtaining deep knowledge of my
-          selected programming languages/technologies. For now, I'm committed to
-          learn modern JS and a strong foundation around web development which
-          I, and my future employer and co-workers could rely on. Farther in
-          future I would learn Rust or some other performant language and
-          contribute in producing some performance critical software; game
-          engines, physics simulation for example, why not performant backend
-          code too. Latter part of these possible futures I see little bit
-          daydreaming, first part I see completely achievable.
+          While I could be considered as technical person, the truth is that I
+          care also about people (and environmental issues also). In my
+          philosophy the product is not only a gadget of marvel, but it acts as
+          a tool or interface for another human to accomplish something. This
+          means that in every phase simplicity and usability must be taken in
+          account. Not to a surprise, colleagues are humans also, so being
+          friendly and respectful while staying humble are in my core values.
+          <p>
+            What comes down to tech and programming languages in short, I am a
+            React developer peppered with some C#/.NET knowledge and who
+            understands something about databases. Node.JS I can do too.
+          </p>
+          <p>
+            On my free time I find myself usually spending time with my family
+            or doing chores. Nowadays I catch myself watching too often YouTube
+            content, though my algorithm is tuned to show me science or history
+            related subjects. All kind of games are on my list of interest and
+            actually I oversee <em>a tabletop roleplaying related web-app</em>{' '}
+            which I have created (with React/Node.JS/MongoDB). Occasionally I
+            might write an adventure and be a game master for my friends. As it
+            is in fashion nowadays, i also hit to the gym when in need for self
+            care
+          </p>
         </p>
       </>
     ),
@@ -104,7 +110,7 @@ export const contentHome = [
 const about = (
   <>
     This web page is created using React with Google's material-UI. Project runs
-    at Heroku server. No gimmicks here, just a plain simple web page focus on
+    at Fly.io server. No gimmicks here, just a plain simple web page focus on
     telling something about person in question, his achievements and interests.
     All packaged in nice wrappings and focus of it's contents to be easily
     extendable. Source code at{' '}
@@ -121,11 +127,6 @@ export const sideBar = {
     },
     { name: 'GitHub', icon: GitHubIcon, link: 'https://github.com/whyowisp' },
     {
-      name: 'GitLab',
-      icon: GitLabIcon,
-      link: 'https://gitlab.labranet.jamk.fi/N3120',
-    },
-    {
       name: 'BandCamp',
       icon: BandCampIcon,
       link: 'https://illusionimajoris.bandcamp.com/',
@@ -141,22 +142,63 @@ export const sideBar = {
   about: about,
 }
 
+const post5 = {
+  title: 'Work experience',
+  date: '16.02.2024',
+  content: (
+    <>
+      <p>
+        On my current employer as a software developer i have worked with few
+        projects:
+      </p>
+      <b>A Facility energy consumption tracking service</b>
+      <p>
+        New feature development and bug fixing in a production-app. This role
+        consisted of front-end design and visualizations with Figma and
+        development with React/React-admin and Highcharts. Database changes for
+        the new features were updated in Azure SQL database and corresponding
+        backend code was implemented with C#/ASP.NET.
+      </p>
+      <b>An IoT fleet management service for property management machines</b>
+      <p>
+        Front-end development with React, TypeScript and NextJS accompanied with
+        Material UI and Chart.js JavaScript libraries in an agile environment
+        with a small development team.
+      </p>
+    </>
+  ),
+}
+const post4 = {
+  title: 'Roleplay campaign management tool',
+  date: '21.11.2022',
+  git: 'https://github.com/whyowisp/RP-management',
+  content: (
+    <>
+      <p>
+        My ongoing fullstack project consisting MongoDB database, server written
+        with NodeJS and front with ReactJS. At the time of writing this is now
+        in early early beta and has been tested couple times with and players
+        have liked it and this is seen worth of further development. Definitely
+        a hobby project for now. Please visit{' '}
+        <a href="https://rpmtool.fly.dev/">https://rpmtool.fly.dev</a> to test
+        and feel.
+      </p>
+    </>
+  ),
+  image: rpmt,
+}
+
 const post3 = {
   title: "Mikko's pages first version from 2019",
   date: '29.05.2019',
   content: (
     <>
       <p>
-        Earlier version of this web page was implemented with plain html/css and
-        while writing this, it's still{' '}
-        <a href="https://student.labranet.jamk.fi/~N3120/mikonsivu/">
-          available
-        </a>
-        .
-      </p>{' '}
+        Earlier version of this web page was implemented with plain html/css.
+      </p>
       <p>
         Page is responsive for both laptop and both tablets and phone screens,
-        brakepoints at widths 600px and 800px. As design principle it's layout
+        breakpoints at widths 600px and 800px. As design principle it's layout
         is for wider screens. Unfortunately menu items wont work/works poorly
         with smartphones so i recommend using mouse.
       </p>
@@ -167,7 +209,6 @@ const post3 = {
 const post2 = {
   title: 'Diary App with MysSQL/php/vanilla js',
   date: '30.11.2020',
-  git: 'https://gitlab.labranet.jamk.fi/N3120/diary-app',
   content: (
     <>
       <p>
@@ -203,7 +244,6 @@ const post2 = {
 const post1 = {
   title: 'Laika Launch',
   date: '30.05.2020',
-  git: 'https://gitlab.labranet.jamk.fi/N3120/laika-launch',
   content: (
     <>
       <p>
@@ -240,7 +280,7 @@ const post1 = {
   image: laika,
 }
 
-export const portfolio = [post1, post2, post3]
+export const portfolio = [post5, post4, post1, post2, post3]
 
 const hobby1 = {
   title: 'Music',
