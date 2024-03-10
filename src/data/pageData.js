@@ -85,22 +85,55 @@ export const contentHome = [
           means that in every phase simplicity and usability must be taken in
           account. Not to a surprise, colleagues are humans also, so being
           friendly and respectful while staying humble are in my core values.
-          <p>
-            What comes down to tech and programming languages in short, I am a
-            React developer peppered with some C#/.NET knowledge and who
-            understands something about databases. Node.JS I can do too.
-          </p>
-          <p>
-            On my free time I find myself usually spending time with my family
-            or doing chores. Nowadays I catch myself watching too often YouTube
-            content, though my algorithm is tuned to show me science or history
-            related subjects. All kind of games are on my list of interest and
-            actually I oversee <em>a tabletop roleplaying related web-app</em>{' '}
-            which I have created (with React/Node.JS/MongoDB). Occasionally I
-            might write an adventure and be a game master for my friends. As it
-            is in fashion nowadays, i also hit to the gym when in need for self
-            care
-          </p>
+        </p>
+        <p>
+          What comes down to tech and programming languages in short, I am a
+          React developer peppered with some C#/.NET knowledge and who
+          understands something about databases. Node.JS I can do too.
+        </p>
+        <p>
+          On my free time I find myself usually spending time with my family or
+          doing chores. Nowadays I catch myself watching too often YouTube
+          content, though my algorithm is tuned to show me science or history
+          related subjects. All kind of games are on my list of interest and
+          actually I oversee <em>a tabletop roleplaying related web-app</em>{' '}
+          which I have created (with React/Node.JS/MongoDB). Occasionally I
+          might write an adventure and be a game master for my friends. As it is
+          in fashion nowadays, i also hit to the gym when in need for self care
+        </p>
+      </>
+    ),
+  },
+  {
+    title: 'The shabby Commodore 64',
+    content: (
+      <>
+        <p>
+          Yes, I am a millennial, who got to grow up without mobile phones or
+          internet, which i think is great and I could get really nostalgic
+          about all of that, but in this post I got to get nostalgic only about
+          one thing and it is about the used Commodore 64 which my father bought
+          to me one day. I guess I was about the age of 8. In that cardboard box
+          there was this fascinating machine and couple books about programming
+          with Basic and few game cassettes. It's not that I immediately started
+          coding, I played games too, but I was drawn for those two books and in
+          to their fascinating content. I had simply no clue what those lines of
+          code meant, but it went something like this:
+        </p>
+        <b>
+          10 FOR I = 1 TO 5 <br></br>
+          20 PRINT "HELLO, WORLD!"<br></br>
+          30 NEXT I<br></br>
+          40 END<br></br>
+        </b>
+        <p>
+          ...and the longer programs, with hundreds of lines of code. Of course
+          I tried to write those programs line to line, but my understanding was
+          limited and finnish was my only language back then, so these projects
+          did not end up well, unsurprisingly. Instead I wrote few shorter
+          programs using of what I've learned on that process; some more PRINT
+          lines, some FOR loops and GOTO statements. The seed for interest about
+          computer science was planted.
         </p>
       </>
     ),

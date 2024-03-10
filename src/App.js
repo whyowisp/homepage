@@ -17,8 +17,7 @@ import {
   sideBar,
 } from './data/pageData'
 
-//Nice theme to work with
-const personalTheme = createTheme({
+const myTheme = createTheme({
   palette: {
     type: 'light',
     primary: {
@@ -35,15 +34,12 @@ const personalTheme = createTheme({
       paper: '#AD9F9E',
     },
   },
-  typography: {
-    fontFamily: 'Do Hyeon',
-  },
   shape: {
-    borderRadius: 16,
+    borderRadius: 3,
   },
 })
 //Mui basic theme, no modifications
-const theme = createTheme()
+//const theme = createTheme()
 
 const App = () => {
   const [content, setContent] = useState(contentHome)
@@ -59,7 +55,7 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={myTheme}>
       <Container maxWidth="lg">
         <Header
           title="Mikko´s pages"
