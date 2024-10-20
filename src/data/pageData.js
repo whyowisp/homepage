@@ -93,13 +93,22 @@ export const contentHome = [
         </p>
         <p>
           On my free time I find myself usually spending time with my family or
-          doing chores. Nowadays I catch myself watching too often YouTube
-          content, though my algorithm is tuned to show me science or history
-          related subjects. All kind of games are on my list of interest and
+          doing chores. All kind of games are on my list of interest and
           actually I oversee <em>a tabletop roleplaying related web-app</em>{' '}
           which I have created (with React/Node.JS/MongoDB). Occasionally I
           might write an adventure and be a game master for my friends. As it is
-          in fashion nowadays, i also hit to the gym when in need for self care
+          in fashion nowadays, i also hit to the gym when in need for self care.
+        </p>
+        <p>
+          And what might future hold for me? So far i have only scratched the
+          surface of the industry. Now I am able to create a web-service from
+          scratch, but for the scratch there is always an itch. And for me the
+          itch is probably the lower level code with some modern and performant
+          programming language (Just say it Mikko, it's <em>Rust</em>) and the
+          wonders that could be done with it. Could it be games or simulations,
+          maybe embedded? I cannot know. Another interesting path could be
+          studying a little bit more to become as an IoT systems specialized SW
+          architect.
         </p>
       </>
     ),
@@ -202,6 +211,16 @@ const post5 = {
   ),
 }
 const post4 = {
+  /*
+  <p>
+        My ongoing fullstack project consisting MongoDB database, server written
+        with NodeJS and front with ReactJS. At the time of writing this is now
+        in early early beta and has been tested couple times with and players
+        have liked it and this is seen worth of further development. Definitely
+        a hobby project for now. Please visit{' '}
+        <a href="https://rpmtool.fly.dev/">https://rpmtool.fly.dev</a> to test
+        and feel.
+      </p>*/
   title: 'Roleplay campaign management tool',
   date: '21.11.2022',
   git: 'https://github.com/whyowisp/RP-management',
@@ -211,10 +230,7 @@ const post4 = {
         My ongoing fullstack project consisting MongoDB database, server written
         with NodeJS and front with ReactJS. At the time of writing this is now
         in early early beta and has been tested couple times with and players
-        have liked it and this is seen worth of further development. Definitely
-        a hobby project for now. Please visit{' '}
-        <a href="https://rpmtool.fly.dev/">https://rpmtool.fly.dev</a> to test
-        and feel.
+        have liked it and this is seen worth of further development.
       </p>
     </>
   ),
@@ -240,7 +256,7 @@ const post3 = {
   image: oldpage,
 }
 const post2 = {
-  title: 'Diary App with MysSQL/php/vanilla js',
+  title: 'Diary App with MySQL/php/vanilla js',
   date: '30.11.2020',
   content: (
     <>
@@ -293,13 +309,9 @@ const post1 = {
         using WPF .NET framework (XAML/C#).
       </p>
       <p>
-        To try this game please download and unzip{' '}
-        <a href="https://student.labranet.jamk.fi/~N3120/mikonsivu/Laikalaunch_release.zip">
-          https://student.labranet.jamk.fi
-        </a>{' '}
-        folder and execute laika.exe. Or clone project from{' '}
-        <a href="https://gitlab.labranet.jamk.fi/N3120/laika-launch">
-          https://gitlab.labranet.jamk.fi/
+        To try this game please clone project from{' '}
+        <a href="https://github.com/whyowisp/laika-launch">
+          https://github.com/whyowisp/laika-launch/
         </a>{' '}
         and execute /Laika-launch/bin/Release/Laika-launch.exe
       </p>
