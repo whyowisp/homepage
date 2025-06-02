@@ -15,6 +15,7 @@ import takaiskari from '../images/takaiskari_34bar.jpg'
 import paintjob from '../images/monark_paintjob.jpg'
 import kinesis from '../images/kinesis.jpg'
 import rpmt from '../images/rpmt.png'
+import tokenofexchange from '../images/tokenofexchange.png'
 
 const BandCampIcon = (props) => {
   // Svg path: Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.
@@ -67,8 +68,29 @@ export const contentHome = [
     title: 'Who, me?',
     content: (
       <>
-        <em>updated 16/02/2024</em>
+        <em>updated 02/06/2025</em>
         <p>
+          I’m a software engineer based in Central Finland with experience
+          primarily in fullstack development, focusing on React, C#/.NET, and
+          Azure. I enjoy thinking, designing, and building effective solutions
+          for the problems at hand. For me, software development is about those
+          “a-ha” moments — watching pieces come together step by step into a
+          working feature or product.
+        </p>
+        <p>
+          While I’m technical, I also deeply care about people and the
+          environment. Software is not just a marvel of technology but a tool
+          that helps people accomplish real goals. That’s why simplicity,
+          usability, and responsible development practices are essential to me.
+          I actively but responsibly utilize modern AI-assisted development
+          tools 🤖 to improve my work.
+        </p>
+        <p>
+          I’m known for my no-nonsense attitude, eagerness to learn, and ability
+          to adapt quickly. Ready to join a team and contribute to new
+          challenges with a fresh perspective.
+        </p>
+        {/*<p>
           Hello, I am a freshly graduated software engineer currently located in
           Central-Finland, most experience in full stack development but with
           interest in basically anything that involves process of thinking,
@@ -109,7 +131,7 @@ export const contentHome = [
           maybe embedded? I cannot know. Another interesting path could be
           studying a little bit more to become as an IoT systems specialized SW
           architect.
-        </p>
+        </p>*/}
       </>
     ),
   },
@@ -118,16 +140,17 @@ export const contentHome = [
     content: (
       <>
         <p>
-          Yes, I am a millennial, who got to grow up without mobile phones or
-          internet, which i think is great and I could get really nostalgic
-          about all of that, but in this post I got to get nostalgic only about
-          one thing and it is about the used Commodore 64 which my father bought
-          to me one day. I guess I was about the age of 8. In that cardboard box
-          there was this fascinating machine and couple books about programming
-          with Basic and few game cassettes. It's not that I immediately started
-          coding, I played games too, but I was drawn for those two books and in
-          to their fascinating content. I had simply no clue what those lines of
-          code meant, but it went something like this:
+          Yes, I’m a millennial who grew up without mobile phones or the
+          internet — something I actually appreciate and could get quite
+          nostalgic about. But today, my nostalgia is reserved for one special
+          thing: the used Commodore 64 my father brought home for me when I was
+          around eight years old.
+        </p>
+        <p>
+          Inside that cardboard box was a fascinating machine, accompanied by a
+          couple of programming books on BASIC and a few game cassettes. I
+          didn’t immediately dive into coding — I played games too — but those
+          books quickly caught my attention with their intriguing content.
         </p>
         <b>
           10 FOR I = 1 TO 5 <br></br>
@@ -136,13 +159,16 @@ export const contentHome = [
           40 END<br></br>
         </b>
         <p>
-          ...and the longer programs, with hundreds of lines of code. Of course
-          I tried to write those programs line to line, but my understanding was
-          limited and finnish was my only language back then, so these projects
-          did not end up well, unsurprisingly. Instead I wrote few shorter
-          programs using of what I've learned on that process; some more PRINT
-          lines, some FOR loops and GOTO statements. The seed for interest about
-          computer science was planted.
+          And there were longer programs too, sometimes hundreds of lines long.
+          Naturally, I tried to type these programs exactly as they were, but my
+          understanding was limited and Finnish was my only language at the
+          time. So, unsurprisingly, those projects didn't quite work out.
+          Instead, I started writing my own shorter programs, experimenting with
+          PRINT statements, FOR loops, and GOTO commands.
+        </p>
+        <p>
+          This early experience planted the seed for my enduring interest in
+          computer science.
         </p>
       </>
     ),
@@ -155,7 +181,7 @@ const about = (
     at Fly.io server. No gimmicks here, just a plain simple web page focus on
     telling something about person in question, his achievements and interests.
     All packaged in nice wrappings and focus of it's contents to be easily
-    extendable. Source code at{' '}
+    extendable. Source code at
     <a href="https://github.com/whyowisp/homepage">GitHub</a>
   </>
 )
@@ -184,7 +210,7 @@ export const sideBar = {
   about: about,
 }
 
-const post5 = {
+const post6 = {
   title: 'Work experience',
   date: '16.02.2024',
   content: (
@@ -210,6 +236,26 @@ const post5 = {
     </>
   ),
 }
+const post5 = {
+  title: 'Token of Exchange',
+  date: '02/06/2025',
+  git: 'https://github.com/whyowisp/token-of-exchange',
+  image: tokenofexchange,
+  content: (
+    <>
+      <p>
+        Token of Exchange is an ongoing passion project built around a simple
+        thought experiment: What if an isolated island community, once based
+        solely on barter, was suddenly forced to adopt money? The simulation
+        explores how different systems of money creation, governance, and
+        taxation shape the economy over time. Through interactive control, the
+        user can observe the unfolding changes — from individual trades between
+        residents to broader economic indicators like GDP, resource sufficiency,
+        economic growth, and overall well-being.
+      </p>
+    </>
+  ),
+}
 const post4 = {
   /*
   <p>
@@ -221,16 +267,16 @@ const post4 = {
         <a href="https://rpmtool.fly.dev/">https://rpmtool.fly.dev</a> to test
         and feel.
       </p>*/
-  title: 'Roleplay campaign management tool',
+  title: 'Roleplay Campaign Canagement Tool',
   date: '21.11.2022',
   git: 'https://github.com/whyowisp/RP-management',
   content: (
     <>
       <p>
-        My ongoing fullstack project consisting MongoDB database, server written
-        with NodeJS and front with ReactJS. At the time of writing this is now
-        in early early beta and has been tested couple times with and players
-        have liked it and this is seen worth of further development.
+        A fullstack project consisting MongoDB database, server written with
+        NodeJS and front with ReactJS. At the time of writing this is now in
+        early early beta and has been tested couple times with and players have
+        liked it and this is seen worth of further development.
       </p>
     </>
   ),
@@ -325,7 +371,7 @@ const post1 = {
   image: laika,
 }
 
-export const portfolio = [post5, post4, post1, post2, post3]
+export const portfolio = [post6, post5, post4, post1, post2, post3]
 
 const hobby1 = {
   title: 'Music',
